@@ -47,50 +47,54 @@ class _ContohSoalState extends State<ContohSoal> {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'lib/assets/math.png',
-                      width: 50,
-                      height: 50,
-                      fit: BoxFit.contain,
-                    ),
-                    SizedBox(width: 10),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Contoh Soal',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 13,
-                          ),
-                        ),
-                        Text(
-                          'Matematika adalah ilmu yang \nmempelajari hal-hal seperti\nbesaran,struktur, perubahan',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 13,
-                          ),
-                        ),
-                      ],
-                    ),
-                    Spacer(),
-                    Image.asset(
-                      'lib/assets/math.png',
-                      width: 50,
-                      height: 50,
-                      fit: BoxFit.contain,
-                    ),
-                  ],
-                ),
+  padding: const EdgeInsets.all(20.0),
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.center, // Memusatkan Row secara horizontal
+    children: [
+      Image.asset(
+        'lib/assets/math.png',
+        width: 50,
+        height: 50,
+        fit: BoxFit.contain,
+      ),
+      SizedBox(width: 10),
+      Center( // Menambah Center di sini
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'Contoh Soal',
+              style: TextStyle(
+                color: Colors.white,
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.w600,
+                fontSize: 13,
               ),
+            ),
+            Text(
+              'Matematika adalah ilmu yang \nmempelajari hal-hal seperti\nbesaran,struktur, perubahan',
+              style: TextStyle(
+                color: Colors.white,
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.w600,
+                fontSize: 13,
+              ),
+            ),
+          ],
+        ),
+      ),
+      SizedBox(width: 10), // Tambahkan SizedBox jika diperlukan
+      Image.asset(
+        'lib/assets/math.png',
+        width: 50,
+        height: 50,
+        fit: BoxFit.contain,
+      ),
+    ],
+  ),
+),
+
             ),
             SizedBox(height: 20),
             Padding(
